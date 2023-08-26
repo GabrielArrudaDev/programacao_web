@@ -16,6 +16,6 @@ function classificarTriangulo(lado1, lado2, lado3) {
 }
 
 // Exemplos de uso
-console.log(classificarTriangulo(5, 5, 5));  // Equilátero
+console.log(classificarTriangulo(5, 5, 5));  // Equiláter
 console.log(classificarTriangulo(5, 5, 8));  // Isósceles
 console.log(classificarTriangulo(3, 4, 5));  // Escaleno
