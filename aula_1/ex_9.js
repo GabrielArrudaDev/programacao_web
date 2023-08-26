@@ -1,4 +1,4 @@
-/**Escreva uma função que receba uma string como argumento e retorne a string invertida.
+/**screva uma função que receba uma string como argumento e retorne a string invertida.
  */
 
 function inverterString(texto) {

@@ -1,4 +1,4 @@
-/* Escreva um programa que declare duas variáveis numéricas e realize as quatro operações matemáticas básicas (+, -, *, /). Imprima os resultados no console. */
+/* screva um programa que declare duas variáveis numéricas e realize as quatro operações matemáticas básicas (+, -, *, /). Imprima os resultados no console. */
 
 // Declaração das variáveis
 const numero1 = 10;
