@@ -10,7 +10,7 @@ const subtracao = numero1 - numero2;
 const multiplicacao = numero1 * numero2;
 const divisao = numero1 / numero2;
 
-// Impressão dos resultado
+// Impressão dos resultados
 console.log("Soma:", soma);
 console.log("Subtração:", subtracao);
 console.log("Multiplicação:", multiplicacao);
