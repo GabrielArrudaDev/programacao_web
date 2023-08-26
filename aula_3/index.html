@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+            font-weight: 500;
+            font-size: larger;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        table{
+            border-collapse: collapse;
+            border: 1px;
+            text-align: center;
+        }
+        td{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+        }
+        input[type="checkbox"]:checked{
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags para texto</h1>
+
+    <h2>Estudando as tags de texto</h2>
+
+    <hr>
+
+    <p>Este é um <strong>texto em negrito</strong> e <em>itálico</em></p>
+
+    <p>Ele também pode ter <sub>subscrito</sub> e <sup>sobrescrito</sup> textos</p>
+
+    <p><b>Texto forte</b> e <em>ênfase são importantes</em></p>
+
+    <blockquote>Isso é uma citação de bloco. Ela pode ser usada para enfatizar um trecho importante</blockquote>
+
+    <p>Uma <q>citação curta</q> é usada para citar algo relevante</p>
+
+    <p>
+        <abbr title="Organização das Nações Unidas
+        ">ONU</abbr> é uma sigla importante
+    </p>
+
+    <p>Segundo o <em>dicionário</em>, <q>vida</q> é a condição que distingue os seres orgânicos</p>
+
+    <p><i>HTML</i> é uma linguagem usada para estruturar páginas web</p>
+    
+    <p><em>Entre em contato pelo email: contato@exemplo.com</em></p>
+
+    <p><s>Cuidado com o passo em falso!</s> E lembre-se de <u>olhar antes de cruzar a rua</u></p>
+
+    <hr>
+
+    <h1>Exemplo de tabela</h1>
+    <table cellspacing="0" cellpading="0">
+        <thead>
+            <th>Check</th>
+            <th>Foto</th>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Qtd em estoque</th>
+            <th>Valor Unitário</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <input type="checkbox"> </td>
+                <td><img src="img/mouse_dell.avif" alt=""></td>
+                <td>1</td>
+                <td>Mouse Laser com fio Dell</td>
+                <td>5</td>
+                <td>R$ 179,00</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/rato_sem_fio.png" alt=""></td>
+                <td>2</td>
+                <td>Mouse Bluetooth Dell</td>
+                <td>6</td>
+                <td>R$ 338,00</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/mouse_optico.jpg" alt=""></td>
+                <td>3</td>
+                <td>Mouse óptico usb preto 100</td>
+                <td>3</td>
+                <td>R$ 48,30</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <h2>Descrição</h2>
+
+    <h3>Características do Produto</h3>
+
+    <label><strong>Especificações</strong></label>
+
+    <ul>
+    <li>Sensor óptico preciso com 1.600 DPI permite que você trabalhe na maioria das superfícies</li>
+    <li>Configuração USB rápida e fácil com cabo de 1,5m</li>
+    <li>Design ambidestro, produzido para caber de forma natural e perfeita na palma da sua mão</li>
+    <li>Três botões integrados</li>
+    <li>Ampla compatibilidade: Windows e Mac</li>
+    </ul>
+
+    <h3>Avaliação do produto</h3>
+
+    <dl>
+    <dt>José Aparecido</dt>
+    <dd>Muito bom</dd>
+    <dt>Joaquim Jorge</dt>
+    <dd>Bom</dd>
+    </dl>
+</body>
+</html>
