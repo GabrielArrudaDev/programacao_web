@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.coluna {
+    width: 48%; /* Cada coluna ocupa 48% do espaço para deixar algum espaço de margem entre elas */
+}
+
+.curso {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.curso h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.curso p {
+    color: #666;
+}
+
+.inscricao-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inscricao-btn:hover {
+    background-color: #0056b3;
+}
