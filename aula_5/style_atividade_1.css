@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.lateral {
+    width: 20%;
+    height: 100vh;
+    background-color: cornflowerblue;
+    float: left;
+    position: relative;
+    color: white;
+    font-size: larger;
+}
+
+.principal {
+    width: 80%;
+    height: 100vh;
+    background-color: #eee;
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lateral a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+}
+
+.lateral a:hover {
+    background-color: #555;
+}
