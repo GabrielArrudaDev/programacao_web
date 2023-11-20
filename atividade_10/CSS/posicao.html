@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS - Position</title>
+    <style>
+        body {
+            padding-bottom: 1000px;
+        }
+        .estatico {
+            height: 100px;
+            border: solid 5px black;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(125, 125, 227);
+   
+        }
+        .relativo {
+            height: 100px;
+            border: solid 5px black;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(230, 134, 236);
+            position: relative;
+            left: 20px;
+            top: 30px;
+        }   
+        .relativo-original {
+            height: 100px;
+            border: solid 5px black;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(230, 134, 236);
+            position: relative;
+        }
+        .absoluto {
+            height: 100px;
+            width: 100px;
+            border: solid 5px black;
+            background-color: red;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+        .fixado {
+            height: 100px;
+            width: 100px;
+            border: solid 5px black;
+            background-color: rgb(185, 181, 219);
+            position: fixed;
+            right: 30px;
+            top: 30px;
+        }
+        .colar {
+            height: 100px;
+            width: 100px;
+            border: solid 5px black;
+            background-color: rgb(20, 19, 28);
+            color: aliceblue;
+            position: sticky;
+            right: 90px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="colar">colado</div>
+    <div class="estatico">estatico</div>
+    <div class="relativo">
+        relativo
+        <div class="absoluto">absoluto</div>
+    </div>
+    <div class="estatico">estatico</div>
+    <div class="estatico">estatico</div>
+    <div class="estatico">estatico</div>
+    <div class="relativo-original">
+        relativo
+        <div class="absoluto">absoluto</div>
+    </div>
+    <div class="fixado">fixado</div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Dom 01</title>
+</head>
+<body>
+    <h1 onclick="ClickTitulo()">Manipulando o DOM</h1>
+    <div class="principal"></div>
+    <div>
+        <p class="paragrafo1">teste</p>
+        <p id="paragrafo2">teste</p>
+        <form>
+            <p>
+                <input type="text" id="texto">
+                
+            </p>
+            <p><button>Testar</button></p>
+        </form>
+    </div>
+    <script>
+        document.querySelector('h1').textContent = 'Modificado via javascript'
+        document.querySelector('.paragrafo1').innerHTML = 'Edson' 
+        document.querySelector('#paragrafo2').textContent = 'Mudei tb'
+        const paragrafos = document.querySelectorAll('div')
+        for (let index = 0; index < paragrafos.length; index++) {
+            console.log(index)
+            
+        }
+        let p = document.getElementById('paragrafo2')
+        p.textContent = "peguei o parágrafo por getelement"
+        p.style.color = 'red'
+
+        function ClickTitulo() {
+            window.alert('Clicou no título')
+        }
+        document.querySelector('button').addEventListener('click', ()=>{
+            let caixaDeTexto = document.querySelector('#texto')
+            window.alert('Olá '+ caixaDeTexto.value)
+        })
+        
+    </script>
+</body>
+</html>

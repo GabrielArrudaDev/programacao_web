@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando elementos</title>
+</head>
+<body>
+    <p>
+        <label for="texto">Item: </label>
+        <input type="text" name="texto" id="texto" placeholder="Digite um item">
+        <button onclick="addLista(event)">Enviar</button>
+        <br>
+        <ul class="lista"></ul>
+    </p>
+    <script>
+        function addLista(event) {
+            event.preventDefault()
+            let texto = document.querySelector('#texto')
+            let lista = document.querySelector('.lista')
+            if (texto.value != '') {
+                let item = document.createElement('li')
+                item.textContent = texto.value
+                lista.appendChild(item)
+                texto.value = ''
+            } else {
+                window.alert("Digite um texto")
+            }
+
+        }
+    </script>
+</body>
+</html>

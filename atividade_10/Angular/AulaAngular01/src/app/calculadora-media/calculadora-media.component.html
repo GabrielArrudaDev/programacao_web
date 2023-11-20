@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="mb-3">
+        <label for="num1" class="form-label">Numero 1</label>
+        <input type="number" class="form-control" id="num1" [(ngModel)]="n1">
+    </div>
+</div>
+<div class="row">
+    <div class="mb-3">
+        <label for="num2" class="form-label">Numero 2</label>
+        <input type="number" class="form-control" id="num2" [(ngModel)]="n2">
+    </div>
+</div>
+<div class="row">
+    <div class="mb-3">
+        <label for="num3" class="form-label">Numero 2</label>
+        <input type="number" class="form-control" id="num3" [(ngModel)]="n3">
+    </div>
+</div>
+<div class="row">
+    <div class="mb-3">
+        <label for="num4" class="form-label">Numero 2</label>
+        <input type="number" class="form-control" id="num4" [(ngModel)]="n4">
+    </div>
+</div>
+<div class="row">
+    <button type="button" class="btn btn-secondary" (click)="calcular()">Calcular</button>
+</div>
+
+<div class="row">
+    <div class="mb-3">
+        <label for="result" class="form-label">Resultado</label>
+        <input type="number" class="form-control" id="result" [value]="resultado" disabled>
+    </div>
+</div>
+<div>
+    <label for="status" class="form-label">Status</label>
+    <input type="text" class="form-control" id="status" [value]="status" disabled>
+  </div>
+  

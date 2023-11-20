@@ -1,0 +1,24 @@
+<form #alunoForm="ngForm" (ngSubmit)="submitForm(alunoForm)" novalidate>
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">RA</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" [(ngModel)]="aluno.ra" required>
+      </div>
+    
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" [(ngModel)]="aluno.nome" required>
+      </div>
+    
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="aluno.email" required>
+        <label for="floatingInput">Email</label>
+      </div>
+    
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Celular</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" [(ngModel)]="aluno.celular" required>
+      </div>
+  
+    <button type="submit" [disabled]="!alunoForm.valid">Enviar</button>
+  </form>
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags - Semânticas</title>
+    
+    <style>
+        /* Anatomia do CSS*/
+        /* formas de aplicar valor */
+        header, .header, #secao {
+            color: #fff; /* por código de cor */
+            font-size: 30px; /* por unidade de medida */
+            text-align: center; /* valores pré-definidos
+            /* múltiplos valores */
+            border: #123 3px solid;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /*função */
+            width: calc(100% - 200px);
+            background-color: rgb(170, 106, 21);
+            
+        }
+        /* Maneira de definir o seletor
+        Básico: 
+            - Por tag
+            - Por #id
+            - Por .class
+        */
+
+    </style>
+    <link rel="stylesheet" href="exemploTagSemantica.css">
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="nav">Nav</div>
+    <div class="main">Main</div>
+    <div class="article">Article</div>
+    <div class="section" id="secao" style="font-size: 60px; background-color: aquamarine;">Section</div>
+    <div class="aside">Aside</div>
+    <div class="footer">Footer</div>
+    <br><br>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main - <span>Teste de aplicação de tag span</span></main>
+    <article>Article</article>
+    <section>Section</section>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>

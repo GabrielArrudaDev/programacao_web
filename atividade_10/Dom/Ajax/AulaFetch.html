@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Consulta CEP</legend>
+            <p>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep">
+                <button onclick="consulta(event)">Consultar</button>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>
+                <label class="carregando" style="visibility: hidden;">Carregando...</label>
+            </p>
+            <p>
+                <label>Rua:</label>
+                <input type="text" name="rua" id="rua">
+            </p>
+            <p>
+                <label>Bairro:</label>
+                <input type="text" name="bairro" id="bairro">
+            </p>
+            <p>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" id="cidade">
+            </p>
+            
+        </fieldset>
+    </form>
+    <!--<script src="consultaCEP.js"></script>-->
+    <script>
+        function consulta(event) {
+            event.preventDefault()
+            let carregar = document.querySelector('.carregando')
+            carregar.style.visibility = 'visible'
+            let cep = document.querySelector('#cep').value
+            consultaCEP(cep).then(dados =>{
+                document.querySelector('#rua').value = dados.logradouro
+                document.querySelector('#bairro').value = dados.bairro
+                document.querySelector('#cidade').value = dados.localidade
+                carregar.style.visibility = 'hidden'
+            })
+            
+        }
+        function consultaCEP(cep) {
+            //https://viacep.com.br/ws/18015066/json/
+            cep = cep.replace('.', '').replace('-', '')
+            let url = `https://viacep.com.br/ws/${cep}/json/`
+            
+            return fetch(url).then(resposta => resposta.json())
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário - Tags</title>
+</head>
+<body>
+    <form action="https://ea1e3314-c8c9-40ce-80e7-8cf2262c74fa.mock.pstmn.io/aluno" 
+    method="get">
+        <fieldset>
+            <legend>Dados do Cliente</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+            </p>
+            <p>
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura id="altura" 
+                    min="0" max="3" step="0.01">
+            </p>
+            <p>
+                <label for="cor">Cor do cabelo:</label>
+                <input type="color" name="cor" id="cor">
+            </p>
+            <p>
+                <label for="dtNascimento">Data de nascimento:</label>
+                <input type="datetime" name="data" id="dtNascimento" placeholder="Digite o e-mail">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </p>
+            <p>
+                <label>Genero:</label>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="">Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="">Feminino</label>
+            </p>
+            <p>
+                <label>Gosta de:</label>
+                <input type="checkbox" name="gostaLer" id="ler" value="leitura">
+                <label for="ler">Ler</label>
+                <input type="checkbox" name="gostaFilme" id="fime" value="filme">
+                <label for="ler">Filme</label>
+                <input type="checkbox" name="gostaEsporte" id="esporte" value="esporte">
+                <label for="ler">Esporte</label>
+            </p>
+            <p>
+                <label for="uploadRG">RG:</label>
+                <input type="file" name="uploadRG" id="uploadRG">
+            </p>
+            <p>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Sudeste" >
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Gravar</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
